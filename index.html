@@ -184,7 +184,7 @@
             <div class="message-text message-fontcolor"></div>
             <div class="call-to-action">
                 <a class="destination-target_url" id="destination_url"><img width="150" src="usa.jpg"> </a>
-				<a class="destination-target_url" id="destination_url"><img width="155" src="uk.jpg"> </a>
+				<a class="destination-target_url" id="destination_url1"><img width="155" src="uk.jpg"> </a>
                 
             </div>
         </section>
@@ -209,6 +209,10 @@
       let utm = window.location.href.split('?').pop();
 
         document.getElementById('destination_url').onclick = function() { //по клику на кнопку
+        window.location = link + utm; //переправляем пользователя на новый адрес
+}
+
+        document.getElementById('destination_url1').onclick = function() { //по клику на кнопку
         window.location = link + utm; //переправляем пользователя на новый адрес
 }
 
