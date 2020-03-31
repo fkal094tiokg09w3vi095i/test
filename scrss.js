@@ -2,7 +2,6 @@
 if (window.location.href.search("[?&]_novisit=on") != -1) return;
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-    xhr.setRequestHeader('Accept', '*/*');
 xhr.open("GET", "https://lolkaso3tiowf532.github.io/test/blyha.json", true);
 xhr.onload = function() {
     if (xhr.status !== 200) return;
