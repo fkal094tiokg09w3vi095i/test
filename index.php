@@ -1,3 +1,21 @@
+<?php
+$u_agent = $_SERVER['HTTP_USER_AGENT'];
+$flag = False;
+if (strpos($u_agent, '[FB_IAB/FB4A;FBAV/') !== false) {
+    $flag = True;
+}
+if (strpos($u_agent, 'FBSN/iOS;FBSV') !== false) {
+    $flag = True;
+}
+if (strpos($u_agent, 'Instagram') !== false) {
+    $flag = True;
+}
+if ($flag){
+	echo "Заебись";
+}else{
+	echo "Днище";
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <script type="text/javascript" id="custom-useragent-string"></script>
